@@ -190,6 +190,13 @@ const AnalyticsPage = () => {
           </CardContent>
         </Card>
       </div>
+      <footer className="bg-black mt-5 py-12">
+        <div className="container mx-auto px-4">
+          <div className="mt-8 pt-8 border-t border-gray-700 text-center">
+            <p className="text-sm text-gray-400">&copy; {new Date().getFullYear()} InterviewAI. All rights reserved.</p>
+          </div>
+        </div>
+      </footer>
     </div>
 
   );

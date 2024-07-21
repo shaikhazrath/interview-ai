@@ -33,7 +33,7 @@ const Header = ({ toggleDarkMode, darkMode }) => {
   return (
     <header className="px-5 py-6">
       <nav className="flex justify-between items-center">
-        <Link href={'/'} className="text-2xl font-bold text-white">
+        <Link href={'/'} className="text-xl font-bold text-white">
           Interview Mentor
         </Link>
         

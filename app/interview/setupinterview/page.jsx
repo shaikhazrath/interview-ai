@@ -10,6 +10,7 @@ import { useRouter } from 'next/navigation';
 import WordPullUp from "@/components/magicui/word-pull-up";
 import interview from '@/data/premadeInterviews';
 import Header from '@/components/header';
+import Footer from '@/components/footer';
 const InterviewSetup = () => {  
   const [jobDescription, setJobDescription] = useState('');
   const [isFocused, setIsFocused] = useState(false);
@@ -109,13 +110,7 @@ const InterviewSetup = () => {
         
         </div>
       </div>
-      <footer className=" mt-5 py-12">
-        <div className="container mx-auto px-4">
-          <div className="mt-8 pt-8 border-t border-gray-700 text-center">
-            <p className="text-sm text-gray-400">&copy; {new Date().getFullYear()} InterviewAI. All rights reserved.</p>
-          </div>
-        </div>
-      </footer>
+<Footer/>
     </div>
 
     </div>

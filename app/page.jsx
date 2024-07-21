@@ -5,6 +5,7 @@ import { Camera, Mic, Brain, ChevronRight, FileText, Send, Twitter, Linkedin, Gi
 import { useRouter } from "next/navigation";
 import Header from "@/components/header";
 import ShineBorder from "@/components/magicui/shine-border";
+import Footer from "@/components/footer";
 
 export default function Home() {
   const router = useRouter();
@@ -15,8 +16,8 @@ export default function Home() {
       <Header />
       <main className="container mx-auto mt-16 px-4">
         <div className="text-center mb-12">
-          <h1 className="text-5xl font-bold mb-4">Practice Your Interviews with AI</h1>
-          <p className="text-xl text-gray-400 mb-8">Practice, analyze, and improve your interview skills with our cutting-edge AI technology</p>
+          <h1 className="text-4xl font-bold mb-4">Practice Your Interviews with AI</h1>
+          <p className="text-small text-gray-400 mb-8">Practice, analyze, and improve your interview skills with our cutting-edge AI technology</p>
           <div className="flex justify-center flex-col gap-2 items-center md:flex-row ">
           <Button size="lg" onClick={() => router.push('/profile')} className=" bg-black text-white hover:bg-white hover:text-black hover:border w-48 ">
             Resume Builder <ChevronRight className="ml-2" />
@@ -56,13 +57,7 @@ export default function Home() {
             </ShineBorder>
             </div>
       </main>
-      <footer className="bg-black mt-5 py-12">
-        <div className="container mx-auto px-4">
-          <div className="mt-8 pt-8 border-t border-gray-700 text-center">
-            <p className="text-sm text-gray-400">&copy; {new Date().getFullYear()} InterviewAI. All rights reserved.</p>
-          </div>
-        </div>
-      </footer>
+   <Footer/>
     </div>
   );
 }

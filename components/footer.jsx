@@ -1,35 +1,24 @@
-import React, { useState } from 'react';
-import { Twitter, Linkedin, Send } from 'lucide-react';
-import { Input } from '@/components/ui/input';
-import { Button } from '@/components/ui/button';
+import React from 'react';
+import { Twitter, Linkedin } from 'lucide-react';
 
 const Footer = () => {
-  const [feedback, setFeedback] = useState('');
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // Here you would typically send the feedback to your server
-    console.log('Feedback submitted:', feedback);
-    setFeedback('');
-    // You might want to show a success message to the user here
-  };
-
   return (
-    <footer className=" mt-5 py-12 ">
-      <div className="container mx-auto px-4 r ">
-        <div className="flex justify-center space-x-4 mb-4">
-         
-          <p className="text-center text-gray-400 text-xs  ">
-            We'd love to hear from you! Please give us your feedback, report any bugs, or rate our service. Stay connected with us on social networks.
+    <footer className="mt-5 py-12  text-white">
+      <div className="container mx-auto px-4">
+        <div className="flex flex-col items-center mb-8">
+          <p className="text-center text-gray-400 text-sm mb-4 max-w-2xl">
+            We&apos;d love to hear from you! Please give us your feedback, report any bugs, or rate our service. Stay connected with us on social networks.
           </p>
-          <a href="https://x.com/shaikhazrathali" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">
-            <Twitter size={24} />
-          </a>
-          <a href="https://www.linkedin.com/in/shaik-hazrathali-856349253" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">
-            <Linkedin size={24} />
-          </a>
+          <div className="flex space-x-4">
+            <a href="https://x.com/shaikhazrathali" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">
+              <Twitter size={24} />
+            </a>
+            <a href="https://www.linkedin.com/in/shaik-hazrathali-856349253" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">
+              <Linkedin size={24} />
+            </a>
+          </div>
         </div>
-        <div className="mt-8 pt-8 border-gray-700 text-center">
+        <div className="border-t border-gray-700 pt-8 text-center">
           <p className="text-sm text-gray-400">&copy; {new Date().getFullYear()} InterviewAI. All rights reserved.</p>
         </div>
       </div>

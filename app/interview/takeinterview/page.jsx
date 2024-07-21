@@ -5,6 +5,8 @@ import { useRouter } from 'next/navigation';
 import axios from 'axios';
 import { Editor } from '@monaco-editor/react';
 import { Code, X, Mic, MicOff } from 'lucide-react';
+import { AlertTriangle } from 'lucide-react';
+
 import FaceEmotionDetection from '@/components/Videoemotion';
 import AudioInputComponent from '@/components/AudioManagement';
 import hr from '@/public/hr.png';
@@ -78,6 +80,8 @@ const Page = () => {
       <div className="flex flex-col h-[100vh] p-4">
         <header className="flex justify-between items-center mb-2">
           <h1 className="text-xl font-bold text-white">AI Interview Assistant</h1>
+          <h1 className='md:hidden text-red-800 text-sm flex items-center gap-2'>        <AlertTriangle className="h-7 w-7" />
+          Please use a desktop or laptop for the best experience</h1>
           {/* <button
             onClick={() => setIsEditorVisible(!isEditorVisible)}
             className="px-3 py-1 flex items-center gap-1 text-sm text-white bg-indigo-600 rounded-md hover:bg-indigo-700 transition-all duration-300"

@@ -19,7 +19,7 @@ const Footer = () => {
       <div className="container mx-auto px-4 r ">
         <div className="flex justify-center space-x-4 mb-4">
          
-          <p className="text-center text-gray-400 ">
+          <p className="text-center text-gray-400 text-xs  ">
             We'd love to hear from you! Please give us your feedback, report any bugs, or rate our service. Stay connected with us on social networks.
           </p>
           <a href="https://x.com/shaikhazrathali" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">

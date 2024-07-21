@@ -26,7 +26,6 @@ export function SetupCards({ data }) {
       if (res.data) {
         router.push('/interview/takeinterview');
       }
-      setLoading(false)
     } catch (error) {
       setLoading(false)
       console.error("Error in handleSelectInterview:", error);

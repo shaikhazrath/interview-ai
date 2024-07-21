@@ -32,7 +32,6 @@ export async function POST(request) {
       question,
       feedbackAnswer  
     }));
-    console.log(questionsWithAnswers)
 
     // Create a new interview setup
     const interviewSetup = new interviewModel({

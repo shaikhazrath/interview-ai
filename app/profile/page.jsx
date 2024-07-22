@@ -9,6 +9,7 @@ import { PlusCircle, MinusCircle } from 'lucide-react';
 import { toPng } from 'html-to-image';
 import { jsPDF } from 'jspdf';
 import Header from '@/components/header';
+import { AlertTriangle } from 'lucide-react';
 
 const ResumeBuilder = ({ initialData }) => {
     const [resumeData, setResumeData] = useState({
@@ -151,7 +152,8 @@ const ResumeBuilder = ({ initialData }) => {
     <div className=' bg-black '>
     <Header/>
     <div className="grid grid-cols-1 md:grid-cols-2 gap-4 px-5 pb-5">
-        
+    <h1 className='md:hidden text-red-800 text-sm flex items-center gap-2'>        <AlertTriangle className="h-7 w-7" />
+    Please use a desktop or laptop for the best experience this will not work on mobile devices</h1>
       <div className="space-y-4 h-[150vh] overflow-y-scroll p-2 ">
         <Card>
           <CardHeader>

@@ -3,7 +3,7 @@ import Header from './header';
 
 const AboutPage = () => {
   return (
-    <div>
+    <div className='bg-black'>
       <Header/>
       <div className="px-4 py-8 bg-black shadow-lg text-gray-300">
         <h2 className="text-3xl font-bold mb-6 text-gray-100 border-b border-gray-700 pb-2">About</h2>

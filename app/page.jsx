@@ -16,12 +16,10 @@ export default function Home() {
       <Header />
       <main className="container mx-auto mt-16 px-4">
         <div className="text-center mb-12">
-          <h1 className="text-5xl font-bold mb-4">Practice Your Interviews with AI</h1>
-          <p className="text-small text-gray-400 mb-8">Practice, analyze, and improve your interview skills with our cutting-edge AI technology</p>
+        <h1 className="text-5xl font-bold mb-4">Boost Your Confidence for Every Interview</h1>
+        <p className="text-small text-gray-400 mb-8">Practice, analyze, and improve your interview skills with our cutting-edge AI technology</p>
           <div className="flex justify-center flex-col gap-2 items-center md:flex-row ">
-          <Button size="lg" onClick={() => router.push('/profile')} className=" bg-black text-white hover:bg-white hover:text-black hover:border w-48 ">
-            Resume Builder <ChevronRight className="ml-2" />
-          </Button>
+   
           <Button size="lg" onClick={() => router.push('/interview/setupinterview')} className=" bg-white text-black hover:bg-black hover:text-white border w-48  ">
            Take Interview <ChevronRight className="ml-2" />
           </Button>

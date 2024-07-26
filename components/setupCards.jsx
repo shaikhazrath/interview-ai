@@ -6,6 +6,7 @@ import { BorderBeam } from "@/components/magicui/border-beam";
 import { useRouter } from "next/navigation";
 import { Button } from "./ui/button";
 import axios from "axios";
+import { Loader2 } from "lucide-react";
 
 export function SetupCards({ data }) {
   const [loading ,setLoading] = useState(false)
@@ -33,7 +34,9 @@ export function SetupCards({ data }) {
   };
   if(loading){
     return(
-       <h1>loading...</h1>
+      <div className="flex justify-center items-center">
+      <Loader2 className="mr-2 h-8 w-8 animate-spin" />
+      </div>
     )
   }
 

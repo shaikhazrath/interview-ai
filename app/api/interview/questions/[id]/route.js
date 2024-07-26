@@ -39,7 +39,6 @@ export async function POST(request, { params }) {
     try {
         const user = tokenCheck.user;
         let { Answer, emotions } = await request.json(); // Updated to destructure emotions
-        console.log(emotions)
         const interviewId = params.id;
 
         if (!Answer) {

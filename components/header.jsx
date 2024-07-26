@@ -26,7 +26,6 @@ const Header = ({ toggleDarkMode, darkMode }) => {
 
   const menuItems = [
     { href: '/', label: 'Home' },
-    { href: '/profile', label: 'Profile' },
     { href: '/about', label: 'About' },
   ];
 

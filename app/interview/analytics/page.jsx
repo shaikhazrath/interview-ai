@@ -47,7 +47,7 @@ const AnalyticsPage = () => {
   if (loading) return (
     <div className="flex justify-center items-center h-screen">
       <Loader2 className="mr-2 h-4 w-4 animate-spin" />
-      please wait this may take take few sections loading...    </div>
+      please wait this may take take few sec loading...    </div>
   );
   if (error) return <div className="flex justify-center items-center h-screen text-red-500">{error}</div>;
   if (!interviewData) return <div className="flex justify-center items-center h-screen">No data available</div>;
@@ -122,7 +122,7 @@ const AnalyticsPage = () => {
     },
   };
   if (loading) {
-    return <h1> please wait this may take take few sections loading...</h1>
+    return <h1> please wait this may take take few sec loading...</h1>
   }
 
   return (

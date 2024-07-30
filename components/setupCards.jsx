@@ -44,7 +44,7 @@ export function SetupCards({ data }) {
     <a onClick={()=>handleSelectInterview(data.id)}>
     <CardContainer className="inter-var" key={data.id} >
       <CardBody className="bg-gray-50  relative group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto h-max rounded-xl p-6 border overflow-hidden">
-        <BorderBeam size={250} duration={12} delay={9} />
+        <div size={250} duration={12} delay={9} />
         <CardItem translateZ="50" className="text-xl font-bold text-neutral-600 dark:text-white">
           {data.name}
         </CardItem>
